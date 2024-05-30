@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Inter", sans-serif;
+}
+.user_profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30vh;
+  padding-top: 20px;
+}
+
+.user_profile img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.user_informations {
+  font-size: 1.2rem;
+  height: 80%;
+  width: 50%;
+  list-style-type: none;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.restaurant_favori {
+  margin-left: 10px;
+}
+.restaurant_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: red;
+}
+
+.restaurant_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
+  margin-bottom: 50px;
+}
+.restaurant_card img {
+  border-radius: 10px;
+}
+.restaurant_card h3{
+  text-align: center;
+  
+}
