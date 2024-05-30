@@ -1,0 +1,26 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ .flex-container img {
+    height: auto;
+    width: 37px;
+ }
+
+  
+ html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {position: relative;}
+  footer {position: absolute; bottom: 0;}
+  
+ p { text-align: center ;
+     font-size: 12 px;
+
+}
