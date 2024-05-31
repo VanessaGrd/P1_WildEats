@@ -68,6 +68,10 @@ footer img {
   width: 37px;
 }
 
+footer img {
+  height: auto;
+  width: 37px;
+}
 .contact-bloc {
 
   display: flex;
@@ -79,43 +83,36 @@ footer img {
 
 }
 
-
 footer {
-
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   z-index: 99;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   align-items: center;
-
-
+  background-color: white;
 }
-
 
 p {
   font-size: 12 px;
   word-spacing: 10px;
   text-align: left;
-  font-weight: bold;
-
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 600px) {
   footer {
-    display: flex;
     width: 100%;
     flex-direction: column-reverse;
+    position: relative;
   }
 
   .contact-bloc {
 
     width: 100%;
     justify-content: space-around;
-
   }
 }
