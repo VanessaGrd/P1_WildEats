@@ -128,5 +128,6 @@
 
   .user_profile {
     min-width: 450px;
+    width: 50%;
   }
 }
