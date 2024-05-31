@@ -50,10 +50,21 @@ nav a {
 div.scroll-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
     overflow: auto;
     white-space: nowrap;
     padding: 5px;
+    
+    /*
+    grid-auto-flow: column;
+    display: grid;
+    justify-items: start;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    overflow-y: hidden;
+    gap: 88px;
+    */
   }
   
   div.scroll-container img {
@@ -69,6 +80,15 @@ div.scroll-container {
   .icon_filter {
     width: 60px;
     height: 60px;
+  }
+
+  .iconText {
+    padding: 5px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 
 /************** FIN CARROUSSEL hORIZONTAL **************/
