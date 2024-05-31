@@ -1,57 +1,121 @@
-* { margin: 0; padding: 0; 
- }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 
- footer img {
-    height: auto;
-    width: 37px;
- }
+form {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 22px auto;
+  padding: 10px;
+  background-color: blueviolet;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+}
+
+form span {
+  position: absolute;
+  font-size: 50px;
+  top: 10px;
+  right:150px;
+  
+}
+.fond-ecran {
+  width: 100%;
+}
+
+
+
+.input {
+  height: 37px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+
+  display: flex;
+  background-color: #0E8345;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  word-spacing: 2px;
+  font-size: 12px;
+  padding: 10px 0;
+  width: 200px;
+  border: none;
+  margin: 5px;
+  transition: all .5 ease-in-out;
+
+}
+
+button:hover {
+  opacity: .8;
+  transform: scale(1.02);
+  cursor: pointer;
+
+}
+
+footer img {
+  height: auto;
+  width: 37px;
+}
+
 .contact-bloc {
-  background-color: blue;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 50%;
   padding-right: 5px;
-  
+
 
 }
 
- 
-  footer {
 
-    background-color: brown;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-   z-index: 99;
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   align-items: center;
-  
- 
+footer {
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+
+
 }
 
 
- p { 
-     font-size: 12 px;
-     word-spacing: 10px;
-     text-align: left;
-     padding-left: 5px;
+p {
+  font-size: 12 px;
+  word-spacing: 10px;
+  text-align: left;
+  font-weight: bold;
+
 }
+
 @media screen and (max-width: 600px) {
   footer {
     display: flex;
     width: 100%;
     flex-direction: column-reverse;
   }
-  .contact-bloc{
+
+  .contact-bloc {
 
     width: 100%;
     justify-content: space-around;
-   
+
   }
 }
-
