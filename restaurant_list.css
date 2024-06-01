@@ -1,78 +1,226 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 
 nav {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 
 nav a {
-    color: #0f0f0f;
-    text-decoration: none;
-    font-size: 18px
+  color: #0f0f0f;
+  text-decoration: none;
+  font-size: 18px;
 }
-
-#nav {
-    /* border: 8px solid red; */
-}
-
-
-.nav {
-    /* border: 4px solid yellow; */
-}
-
-/* nav {
-    border-bottom: 2px solid black;
-} */
 
 .logo {
-    width: 150px;
-    height: 120px;
+  width: 7rem;
 }
+
 .profile_icone {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
 }
+
 .div_header {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
+
 .navbar {
-    display: none;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+#root img{
+  display: none;
+}
+/* hide responsive menu */
+#topnav_hamburger_icon,
+#topnav_responsive_menu {
+  display: none;
+}
 /*Partie @MediaQueries pour le responsive*/
-@media (max-width : 430px) {
+@media (max-width: 830px) {
+  .navbar{
+    display: none;
+  }
+  #root img{
+    display: flex;
+  }
 
-    nav {
-        display: none;
-    }
-    .logo {
-        width: 95px;
-        height: 80px;
-    }
-    .profile_icone {
-        display: none;
-    }
-    .div_header {
-        
-        margin-right: 10px;
-    }
+
+/* ******************** MENU BURGER ******************** */
+
+/* hide responsive menu */
+#topnav_hamburger_icon,
+#topnav_responsive_menu {
+  display: none;
+}
+
+  /* disable horizontal scrolling  */
+  #root {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    padding: 5px;
+  }
+
+  /* show responsive menu and position at the right of the screen */
+  #topnav_responsive_menu {
+    display: block;
+    position: fixed;
+    margin: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    transform: translateX(100%); 
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+/* And let's slide it in from the right */
+#topnav_responsive_menu.open {
+  transform: translateX(0); 
+}
+
+  #topnav_responsive_menu ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    min-width: 50vw;
+    height: 30vh;
+    padding: 56px 0 0;
+    text-align: center;
+    background: #ededed;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    list-style-type: none;
+    border-radius: 0 0 0 10px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #topnav_responsive_menu li {
+    padding: 12px 24px;
+  }
+
+  #topnav_responsive_menu a {
+    white-space: nowrap;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* And let's slide it in from the right */
+  #topnav_responsive_menu.open {
+    transform: none;
+    position: fixed;
+  }
+
+  /* ******************** HAMBURGER ICON ******************** */
+  /* define size and position of the hamburger link */
+  #topnav_hamburger_icon {
+    display: block;
+    position: relative;
+    margin: 16px;
+    width: 33px;
+    height: 28px;
+    z-index: 100;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  /* define the style (size, color, position, animation, ...) of the 3 spans */
+  #topnav_hamburger_icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: #000000;
+    border-radius: 3px;
+    z-index: 100;
+    opacity: 1;
+    left: 0;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  /* set the 3 spans position to look like a hamburger */
+  #topnav_hamburger_icon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+  }
+  #topnav_hamburger_icon span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  #topnav_hamburger_icon span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+
+  /* change color when opening the menu */
+  #topnav_hamburger_icon.open span {
+    background: #000000;
+  }
+
+  /* the first span rotates 45° \ */
+  #topnav_hamburger_icon.open span:nth-child(1) {
+    width: 110%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* the second span disappears */
+  #topnav_hamburger_icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  /* the last span rotates -45° / */
+  #topnav_hamburger_icon.open span:nth-child(3) {
+    width: 110%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
 }
