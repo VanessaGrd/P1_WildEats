@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="profile_page.css" />
+    <link rel="stylesheet" href="restaurant_list.css">
     <link rel="stylesheet" href="connexion.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,41 @@
   </head>
   <body>
     <header>
+      <div class="navbar">
+      <img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo">
+      <div class="div_header">
+          <nav class="nav" id="nav">
+              <a href="#">A propos</a>
+              <a href="#">Nous contacter</a>
+              <a href="#">Déconnexion</a>
+          </nav>
+          <img src="assets/avatar.jpg" alt="icone de connexion compte utilisateur" class="profile_icone">
+      </div>  
+    </div>
+    <div id="root">
+      <img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo">
+
+        <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li><a href="">A propos</a></li>
+            <li><a href="">Nous contacter</a></li>
+            <li><a href="">Déconnexion</a></li>
+          
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <main>
       <div class="profile_page">
         <div class="user_profile">
           <img src="./assets/avatar.jpg" alt="avatar" />
@@ -94,8 +130,8 @@
                 <p>17 rue Delandine 69002 Lyon</p>   
             </div>
             </a>
-    </header>
-    <footer>
+          </main>    
+          <footer>
       <p>© 2024 DevelopperTeam All rights reserved | Mentions légales</p>
       <div class="contact-bloc">
         <a href="hjgyfuyf">
@@ -112,7 +148,7 @@
         </a>
       </div>
     </footer>
-    <script src="profile_page.js"></script>
+    <script src="./menu_burger.js"></script>
 
   </body>
 </html>
