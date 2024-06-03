@@ -6,9 +6,9 @@ function generateStars(count) {
   return starsHtml;
 }
 
-function createRestaurantCard(restaurant) {
+function createFavoriteCard(restaurant) {
   return `
-    <a href="restaurant_detail.html?id=${restaurant.id}" class="restaurant_card">
+    <div class="restaurant_card">
       <img class="restaurant_picture" src="${restaurant.image}" alt="${restaurant.name}">
       <div class="title">
         <div class="stars_like">
@@ -16,24 +16,24 @@ function createRestaurantCard(restaurant) {
             <h3>${restaurant.name}</h3>
             <div>${generateStars(restaurant.stars)}</div>
           </div>
+          <img class="favoris" src="./assets/heart.svg" alt="favoris">
         </div>
         <p>${restaurant.address}</p>
-        <p>${restaurant.type}</p>
       </div>
-    </a>
+    </div>
   `;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const restaurantListContainer = document.getElementById("restaurant_list");
+  const favoriteListContainer = document.getElementById("favorite_list");
 
   fetch('./data/restaurants.json')
     .then(response => response.json())
     .then(data => {
-      const proposals = data.filter(restaurant => !restaurant.favorite);
-      console.log('Proposals:', proposals);
-      proposals.forEach(restaurant => {
-        restaurantListContainer.innerHTML += createRestaurantCard(restaurant);
+      const favorites = data.filter(restaurant => restaurant.favorite);
+      console.log('Favorites:', favorites);
+      favorites.forEach(restaurant => {
+        favoriteListContainer.innerHTML += createFavoriteCard(restaurant);
       });
     })
     .catch(error => console.error('Error fetching restaurant data:', error));

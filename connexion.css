@@ -21,9 +21,10 @@ footer {
   justify-content: space-between;
   width: 100%;
   z-index: 99;
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
+  background-color: #D8D9E0;
   align-items: center;
 }
 
