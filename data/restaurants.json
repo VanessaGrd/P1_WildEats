@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Le Petit Bistro",
+    "image": "https://source.unsplash.com/1600x900/?bistro,restaurant",
+    "address": "17 rue Delandine 69002 Lyon",
+    "stars": 4
+  },
+  {
+    "id": 2,
+    "name": "Pizza Italiana",
+    "image": "https://source.unsplash.com/1600x900/?pizza,italian",
+    "address": "22 rue de la République 69002 Lyon",
+    "stars": 2
+  },
+  {
+    "id": 3,
+    "name": "French Delight",
+    "image": "https://source.unsplash.com/1600x900/?pizza,french",
+    "address": "45 avenue des Champs-Élysées 75008 Paris",
+    "stars": 3
+  },
+  {
+    "id": 4,
+    "name": "Japanese Sushi",
+    "image": "https://source.unsplash.com/1600x900/?pizza,japanese",
+    "address": "10 rue Sainte-Catherine 33000 Bordeaux",
+    "stars": 4
+  }
+]

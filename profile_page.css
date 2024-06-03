@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body{
+  background-color: #FFEFD6;
+
+}
 /* Informations de l'utilisateur */
 .profile_page {
   display: flex;
@@ -117,6 +121,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    padding: 20px;
   }
 
   .restaurant_card {
