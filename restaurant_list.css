@@ -4,22 +4,31 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+body {
+  background-color: #eff0f3;
+  height: 100vh;
+}
 
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap: 32px;
+  width: 100%;
 }
 
-nav a {
-  color: #0f0f0f;
+.nav a {
   text-decoration: none;
-  font-size: 18px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
 }
-/* Changement de couleur lors du survol */
+
 .nav a:hover {
-  color: #0e8345;
-  transition: width 0.3s ease, right 0.3s ease;
+ color: #0e8345;
+ font-weight: 600;
+ transition: all 0.1s ease-in-out;
 }
 
 .logo {
@@ -37,6 +46,7 @@ nav a {
   display: flex;
   gap: 30px;
   align-items: center;
+  width: 50%;
 }
 
 .navbar {
@@ -45,10 +55,10 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 
 #root img {
   display: none;
@@ -59,7 +69,7 @@ nav a {
   display: none;
 }
 /*Partie @MediaQueries pour le responsive*/
-@media (max-width: 830px) {
+@media (max-width: 1024px) {
   .navbar {
     display: none;
   }
