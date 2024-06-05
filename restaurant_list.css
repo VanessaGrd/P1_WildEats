@@ -55,7 +55,7 @@ nav a {
 div.scroll-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     flex-direction: row;
     overflow: auto;
     white-space: nowrap;
@@ -89,24 +89,25 @@ div.scroll-container {
 
   .iconText {
     padding: 5px;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
 
-/************** FIN CARROUSSEL hORIZONTAL **************/
+/************** FIN CARROUSSEL HORIZONTAL **************/
 
 #root img {
   display: none;
-}
 /* hide responsive menu */
 #topnav_hamburger_icon,
 #topnav_responsive_menu {
   display: none;
 }
+}
 /*Partie @MediaQueries pour le responsive*/
+
 @media (max-width: 830px) {
   .navbar {
     display: none;
@@ -114,7 +115,7 @@ div.scroll-container {
   #root img {
     display: flex;
   }
-
+}
   /* ******************** MENU BURGER ******************** */
 
   /* hide responsive menu */
@@ -274,4 +275,3 @@ div.scroll-container {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-}

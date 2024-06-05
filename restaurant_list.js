@@ -1,5 +1,5 @@
 const logos = {
-    "French": "./assets/star.svg",
+    "French": "./assets/",
     "Italian": "./assets/star.svg",
     "Japanese": "./assets/star.svg",
     "Vegetarian": "./assets/star.svg",
@@ -32,7 +32,7 @@ const logos = {
   });
 
   function createRestaurantCard(restaurant) {
-    return 
+    return `
       <a href="restaurant_detail.html?id=${restaurant.id}" class="restaurant_card">
         <img class="restaurant_picture" src="${restaurant.image}" alt="${restaurant.name}"/>
         <div class="title">
@@ -46,5 +46,5 @@ const logos = {
           <img class="restaurant_type" src="${logos[restaurant.type]}" alt="${restaurant.type}"/>
         </div>
       </a>
-    ;
+    `;
   }
