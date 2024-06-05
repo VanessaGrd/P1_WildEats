@@ -15,7 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('restaurant_image').src = restaurant.image;
         document.getElementById('restaurant_address').textContent = restaurant.address;
         document.getElementById('restaurant_stars').innerHTML = generateStars(restaurant.stars);
-      } else {
+        document.getElementById('restaurant_phone').textContent = restaurant.phone;
+        document.getElementById('restaurant_website').href = restaurant.website;
+        document.getElementById('restaurant_website').textContent = restaurant.website;
+        document.getElementById('restaurant_type').textContent = restaurant.type;
+        document.getElementById('restaurant_mail').textContent = restaurant.email;
+        document.getElementById('restaurant_mail').href = restaurant.email;
+
+
+
+
+ } else {
         console.error('Restaurant not found');
       }
     })

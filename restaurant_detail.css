@@ -10,29 +10,31 @@ body {
 
 .hautDePage {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   height: auto;
   align-items: center;
   text-align: center;
+  background-color: blue;
 }
 
-#add_to_favorite{
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+.hautDePage h1{
+  margin-right: 20px;
+
 }
 .resto img {
   width: 300px;
 }
 .contact {
   flex-direction: column;
+  background-color: red;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 830px) {
   .hautDePage {
-    flex-direction: row;
+    background-color: green;
+    justify-content: center;
   }
   
 .hautDePage h1 {
@@ -42,7 +44,6 @@ body {
 
 .resto {
   display: flex;
-
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 40px;
@@ -58,7 +59,7 @@ body {
 
 .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .contact-card {

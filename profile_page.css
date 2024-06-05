@@ -5,9 +5,11 @@
   font-family: "Inter", sans-serif;
 }
 
-body{
-  background-color: #D8D9E0;
+body {
+  background-color: #d8d9e0;
 }
+
+
 /* Informations de l'utilisateur */
 .profile_page {
   display: flex;
@@ -23,15 +25,14 @@ body{
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 40px;
-  background-color: #FCFCFD;
+  background-color: #fcfcfd;
   color: black;
   border-radius: 10px;
   min-width: 200px;
   width: 20rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
-.user_block{
+.user_block {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -53,35 +54,43 @@ body{
   flex-direction: column;
   justify-content: space-around;
   padding-left: 10px;
-
 }
 
-.user_profile h3{
+.user_profile h3 {
   text-align: center;
   font-size: 1.6rem;
 }
 
-.user_informations li{
+.user_informations li {
   font-weight: medium;
   margin-top: 8px;
-  }
-  .user_informations li span {
-    font-weight: 600;
-  }
+}
+.user_informations li span {
+  font-weight: 600;
+}
 /* Liste des restaurants favoris*/
+.favorite_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .restaurant_list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
+
 }
 /* Card du restaurant favori*/
 .restaurant_card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background-color: #FCFCFD;
+  background-color: #fcfcfd;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100%;
   margin-bottom: 50px;
@@ -90,7 +99,6 @@ body{
   max-width: 350px;
   text-decoration: none;
   color: black;
-
 }
 
 .restaurant_picture {
@@ -137,16 +145,14 @@ body{
 }
 
 @media screen and (min-width: 1024px) {
-
   .restaurant_list {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
   }
-  .restaurants{
+  .restaurants {
     padding: 20px;
   }
-  
+
   .restaurant_card {
     margin-right: 50px;
     width: 10rem;

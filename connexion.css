@@ -19,7 +19,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   z-index: 99;
   position: fixed;
   bottom: 0;
@@ -44,8 +44,7 @@ p {
   }
 
   footer {
-    width: 100%;
+    width: 100vw;
     flex-direction: column-reverse;
-    position: relative;
-  }
+ }
 }
