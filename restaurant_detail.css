@@ -1,118 +1,146 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: #f4f4f4;
-  }
-  
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hautDePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.hautDePage img {
+  border-radius: 10px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
   .hautDePage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
   }
-
-  @media screen and (min-width: 1200px) {
-    .hautDePage {
-        flex-direction: row;
-        
-
-    }
-    .hautDePage img {
-        display: none;
-      }
-
-  }
-  
   .hautDePage img {
-    border-radius: 10px;
-    width: 200px;
+    display: none;
+    width: 300px;
   }
-  
   .hautDePage h1 {
     font-size: 2rem;
-    align-self: center;
+    text-align: center;
   }
-  
-  .resto {
-    display: flex;
-   
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 40px;
-  }
-  
-  .resto img {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 100%;
-    height: auto;
-  }
-  
+}
 
-  .contact {
+.resto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.resto img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .resto {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .resto img {
+    width: 300px;
+    max-width: none;
+  }
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer; /* Change le curseur de la souris pour indiquer que l'image est cliquable */
+}
+
+@media screen and (min-width: 1200px) {
+  .heart-container {
+    justify-content: center;
+  }
+}
+
+
+.heart {
+  font-size: 3em;
+  cursor: pointer;
+  color: rgb(189, 184, 184); /* Cœur vide */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  line-height: 1em;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+}
+
+@media screen and (min-width: 1200px) {
+  .contact{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
-  }
-  .contact-card {
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    .contact-card {
-      flex-direction: row-reverse;
-    }
+    justify-content: space-evenly;
+  }  
 }
-  .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
- .contact-item i {
-    margin-right: 10px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .contact-item span,
-  .contact-item a {
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .contact-item a:hover {
-    text-decoration: underline;
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .resto img {
-       max-width: non;
-       width: 300px;
-       flex-direction: row;
-    }
+
+.contact-card {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
   }
 
-  @media(max-width: 786px) {
-    .resto img {
-       
-        width: 300px;
-        
-     }
-     .contact {
-       
-        flex-direction: column;
-         
-      }
-  }
+.contact-link {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+  
+.contact-item {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+
+.contact-item i {
+margin-right: 10px;
+font-size: 24px;
+color: #333;
+}
+
+.contact-item span,
+.contact-item a {
+font-size: 18px;
+color: #333;
+text-decoration: none;
+}
+
+.contact-item a:hover {
+text-decoration: underline;
+}
