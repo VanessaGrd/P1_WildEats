@@ -18,6 +18,7 @@ header {
   height: 80px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 footer {
@@ -37,11 +38,20 @@ footer {
   background-color: white;
 }
 
-main {
-  background-image: url("/assets/fond ecran nourriture.png");
-  flex-grow: 1;
-  padding: 20px;
-  overflow-y: auto;
+
+.background {
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100%;
+    background-image: url("/assets/fond ecran nourriture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: -1; 
+    position: absolute;
+
+  
 }
 
 
@@ -58,9 +68,10 @@ main {
 .connexion-bouton {
   width: 40%;
   height: 100%;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  
 }
 
 .titre1 {
@@ -74,24 +85,49 @@ main {
   text-align: center;
 }
 
-.form {
-  position: relative;
-  width: 200px;
+.connexionForm {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 700px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin: 22px auto;
+  gap: 30px;
+  margin: 22px;
   padding: 10px;
-  background-color: rgb(221, 220, 220);
+  background-color: rgb(236, 233, 233);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.inscriptionForm {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 700px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 22px;
+  padding: 10px;
+  background-color: rgb(236, 233, 233);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+
 .p1 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 
 }
 
@@ -103,8 +139,14 @@ main {
   right: 5px;
   cursor: pointer;
 
-
-
+}
+.close2 {
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  top: 0px;
+  right: 5px;
+  cursor: pointer;
 }
 
 .fond-ecran {
@@ -116,8 +158,29 @@ main {
 
 .input {
   height: 37px;
+  width: 600px;
   border-radius: 10px;
   border: none;
+}
+
+.input2 {
+  height: 37px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input_bloc{
+  display: flex;
+  flex-direction: column;
+}
+
+.inscriptionBloc{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+ 
 }
 
 .B1 {
@@ -146,17 +209,44 @@ main {
   word-spacing: 2px;
   font-size: 18px;
   height: 35px;
+  width: 150px;
   border: none;
   transition: all .5 ease-in-out;
 }
 
-
-
+.B3 {
+  background-color: #0E8345;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  word-spacing: 2px;
+  font-size: 18px;
+  height: 35px;
+  width: 150px;
+  border: none;
+  transition: all .5 ease-in-out;
+}
+.B4 {
+  background-color: #0E8345;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  word-spacing: 2px;
+  font-size: 18px;
+  height: 35px;
+  width:100px;
+  border: none;
+  transition: all .5 ease-in-out;
+}
 button:hover {
   opacity: .8;
   transform: scale(1.02);
   cursor: pointer; 
 
+}
+
+label {
+  font-size: 20px;
 }
 
 footer img {
@@ -190,6 +280,10 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .connexion-bouton {
+    flex-direction: column;
+  }
+
   footer {
     width: 100%;
     flex-direction: column-reverse;
@@ -200,6 +294,51 @@ p {
 
     width: 100%;
     justify-content: space-around;
+  }
+
+  .background {
+    width: 100%;
+    height: 100vh; 
+  }
+  .connexionForm {
+    width: 200px;  
+    height: 200px;
+    position: relative; 
+    top: 0;
+    transform: none;
+    margin: 0 auto; 
+    margin-top: 20px; 
+    gap: 10px;
+  }
+
+  .titre1 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.titre2 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.p1 {
+  font-weight: bold;
+  font-size: 20px;
+
+}
+p {
+  font-size: 12 px;
+  word-spacing: 10px;
+  text-align: left;
+  padding-left: 5px;
+}
+  .input{
+    width: 200px;;
+  }
+
+  label {
+    font-size: 16px;
   }
   
 }
