@@ -1,103 +1,145 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #d8d9e0;
+}
+main {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  background-color: #D8D9E0;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100vh - 84px - 63px);
 }
-
 .hautDePage {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  height: auto;
   align-items: center;
-  text-align: center;
-  background-color: blue;
-}
-
-.hautDePage h1{
-  margin-right: 20px;
-
-}
-.resto img {
-  width: 300px;
-}
-.contact {
-  flex-direction: column;
-  background-color: red;
-}
-
-@media screen and (min-width: 830px) {
-  .hautDePage {
-    background-color: green;
-    justify-content: center;
-  }
-  
-.hautDePage h1 {
-  font-size: 2rem;
-  align-self: center;
-}
-
-.resto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 40px;
-}
-
-.resto img {
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#restaurant_images {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#restaurant_images img {
+  margin-bottom: 20px;
+  margin-right: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 100%;
-  height: auto;
+  width: 12rem;
+}
+.hautDePage h1 {
+  font-size: 1.4rem;
+  margin-right: 10px;
 }
 
-.contact {
+.contact_block {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-}
-.contact-card {
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 600px;
+  justify-content: space-around;
+  height: 20rem;
+  font-size: 1.2rem;
+  padding-left: 10px;
 }
 
-.contact-card {
-  flex-direction: row-reverse;
+.contact_block p {
+  text-align: start;
+  font-size: 1.2rem;
 }
 
 .contact-item {
   display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.contact-item i {
-  margin-right: 10px;
-  font-size: 24px;
-  color: #333;
-}
-
-.contact-item span,
-.contact-item a {
-  font-size: 18px;
-  color: #333;
-  text-decoration: none;
-}
-
-.contact-item a:hover {
-  text-decoration: underline;
-}
-
-.resto img {
-  max-width: non;
-  width: 300px;
   flex-direction: row;
+  align-items: center;
 }
+
+.contact-link {
+  align-items: center;
+  
 }
+
+.contact-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.heart-container {
+  justify-content: center;
+}
+
+.heart {
+  font-size: 3em;
+  cursor: pointer;
+  color: rgb(189, 184, 184); /* Cœur vide */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  line-height: 1em;
+  text-align: center;
+  border-radius: 50%;
+}
+.contact_links{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact_items{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 830px) {
+  .hautDePage {
+    justify-content: center;
+  }
+
+  .hautDePage h1 {
+    font-size: 2rem;
+  }
+
+  #restaurant_images img {
+    margin-right: 20px;
+    width: 20rem;
+  }
+  .resto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact_block{
+    flex-direction: row;
+    height: 10rem;
+  }
+
+  .contact_links{
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+  }
+  .contact_items{
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+  }
+}
+
+

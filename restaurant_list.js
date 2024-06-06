@@ -1,11 +1,3 @@
-const logos = {
-  "French": "./assets/star.svg",
-  "Italian": "./assets/star.svg",
-  "Japanese": "./assets/star.svg",
-  "Vegetarian": "./assets/star.svg",
-  "Burger": "./assets/star.svg",
-};
-
 function generateStars(count) {
   let starsHtml = "";
   for (let i = 0; i < count; i++) {
@@ -17,8 +9,8 @@ function generateStars(count) {
 function createRestaurantCard(restaurant) {
   return `
     <a href="restaurant_detail.html?id=${restaurant.id}" class="restaurant_card">
-      <img class="restaurant_picture" src="${restaurant.image}" alt="${restaurant.name}"/>
-      <div class="title">
+    <img class="restaurant_picture" src="${restaurant.images[0]}" alt="${restaurant.name}"/>
+    <div class="title">
         <div class="stars_like">
           <div class="stars_block">
             <h3>${restaurant.name}</h3>
@@ -26,7 +18,6 @@ function createRestaurantCard(restaurant) {
           </div>
         </div>
         <p>${restaurant.address}</p>
-        <img class="restaurant_type" src="${logos[restaurant.type]}" alt="${restaurant.type}"/>
       </div>
     </a>
   `;
