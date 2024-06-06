@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Le Petit Bistro",
+    "images": [
+      "https://source.unsplash.com/1600x900/?bistro,restaurant",
+      "https://source.unsplash.com/1600x900/?french,cuisine",
+      "https://source.unsplash.com/1600x900/?bistro,food"
+    ],
+    "address": "17 rue Delandine 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "French",
+    "email": "contact@lepetitbistro.fr",
+    "website": "http://www.lepetitbistro.fr",
+    "phone": "+33 4 78 42 12 12"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Italiana",
+    "images": [
+      "https://source.unsplash.com/1600x900/?pizza,italian",
+      "https://source.unsplash.com/1600x900/?italian,food",
+      "https://source.unsplash.com/1600x900/?pizza,restaurant"
+    ],
+    "address": "22 rue de la République 69002 Lyon",
+    "stars": 2,
+    "favorite": false,
+    "type": "Italian",
+    "email": "contact@pizzaitaliana.fr",
+    "website": "http://www.pizzaitaliana.fr",
+    "phone": "+33 4 78 42 13 13"
+  },
+  {
+    "id": 3,
+    "name": "French Delight",
+    "images": [
+      "https://source.unsplash.com/1600x900/?pizza,french",
+      "https://source.unsplash.com/1600x900/?french,cuisine",
+      "https://source.unsplash.com/1600x900/?french,restaurant"
+    ],
+    "address": "45 avenue des Champs 69002 Lyon",
+    "stars": 3,
+    "favorite": false,
+    "type": "French",
+    "email": "contact@frenchdelight.fr",
+    "website": "http://www.frenchdelight.fr",
+    "phone": "+33 4 78 42 14 14"
+  },
+  {
+    "id": 4,
+    "name": "Japanese Sushi",
+    "images": [
+      "https://source.unsplash.com/1600x900/?pizza,japanese",
+      "https://source.unsplash.com/1600x900/?japanese,sushi",
+      "https://source.unsplash.com/1600x900/?sushi,restaurant"
+    ],
+    "address": "10 rue Sainte-Catherine 69002 Lyon",
+    "stars": 4,
+    "favorite": true,
+    "type": "Japanese",
+    "email": "contact@japanesesushi.fr",
+    "website": "http://www.japanesesushi.fr",
+    "phone": "+33 4 78 42 15 15"
+  },
+  {
+    "id": 5,
+    "name": "Green Salad",
+    "images": [
+      "https://source.unsplash.com/1600x900/?vegetarian,restaurant",
+      "https://source.unsplash.com/1600x900/?vegetarian,food",
+      "https://source.unsplash.com/1600x900/?salad,restaurant"
+    ],
+    "address": "5 Rue des Marronniers 69002 Lyon",
+    "stars": 5,
+    "favorite": false,
+    "type": "Vegetarian",
+    "email": "contact@greensalad.fr",
+    "website": "http://www.greensalad.fr",
+    "phone": "+33 4 78 42 16 16"
+  },
+  {
+    "id": 6,
+    "name": "Burger House",
+    "images": [
+      "https://source.unsplash.com/1600x900/?burger,restaurant",
+      "https://source.unsplash.com/1600x900/?burger,food",
+      "https://source.unsplash.com/1600x900/?burger,house"
+    ],
+    "address": "20 Quai Rambaud 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Burger",
+    "email": "contact@burgerhouse.fr",
+    "website": "http://www.burgerhouse.fr",
+    "phone": "+33 4 78 42 17 17"
+  }
+]
