@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const registerButton = document.getElementById("registerButton");
   const loginButton = document.getElementById("loginButton");
 
-  registerButton.addEventListener("click", () => {
+  registerButton.addEventListener("click", (event) => {
+    event.preventDefault();
     const name = document.getElementById("name").value;
     const surname = document.getElementById("surname").value;
     const address = document.getElementById("address").value;
@@ -44,6 +45,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+        
+        // Vérification si l'e-mail existe déjà
+        const userExists = users.some(u => u.email === email);
+        if (userExists) {
+          alert("Cette adresse e-mail est déjà utilisée.");
+          return;
+        }
+
     const user = {
       name,
       surname,
@@ -54,15 +64,15 @@ document.addEventListener("DOMContentLoaded", () => {
       password,
     };
 
-    let users = JSON.parse(localStorage.getItem("users")) || [];
     users.push(user);
     localStorage.setItem("users", JSON.stringify(users));
-
     alert("Inscription réussie !");
+    inscriptionForm.style.display = "none";
+    connexionForm.style.display = "flex";
   });
 
-  loginButton.addEventListener("click", () => {
-
+  loginButton.addEventListener("click", (event) => {
+    event.preventDefault();
     const email = document.getElementById("loginMail").value;
     const password = document.getElementById("loginPassword").value;
 
