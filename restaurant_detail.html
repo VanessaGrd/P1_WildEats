@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WILDEATS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="restaurant_detail.css">
@@ -12,81 +12,78 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo">
-            <div class="div_header">
-                <nav class="nav" id="nav">
-                    <a href="#">A propos</a>
-                    <a href="#">Nous contacter</a>
-                    <a href="#">Déconnexion</a>
-                </nav>
-                <img src="assets/avatar.jpg" alt="icone de connexion compte utilisateur" class="profile_icone">
-            </div>  
-          </div>
-          <div id="root">
-            <img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo">
+      <div class="navbar">
+        <a href="./restaurant _list.html"><img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo"></a>
+        <div class="div_header">
+            <nav class="nav" id="nav">
+                <a href="#">A propos</a>
+                <a href="#">Nous contacter</a>
+                <a href="#">Déconnexion</a>
+            </nav>
+           <a href="./profile_page.html"> <img src="assets/avatar.jpg" alt="icone de connexion compte utilisateur" class="profile_icone"></a>
+        </div>  
+      </div>
+      <div id="root">
+        <a href="./restaurant _list.html"><img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo"></a>
+  
+          <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
       
-              <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
-                <!-- Some spans to act as a hamburger -->
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
-          
-              <!-- Responsive Menu -->
-              <nav role="navigation" id="topnav_responsive_menu">
-                <ul>
-                  <li><a href="">A propos</a></li>
-                  <li><a href="">Nous contacter</a></li>
-                  <li><a href="">Déconnexion</a></li>
-                
-                </ul>
-              </nav>
-            </div>
-          </div>
-      
+          <!-- Responsive Menu -->
+          <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+              <li><a href="./profile_page.html">Mon profil</a></li>
+              <li><a href="">A propos</a></li>
+              <li><a href="">Nous contacter</a></li>
+              <li><a href="">Déconnexion</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
-    <div class="hautDePage">
-            <img alt="map" src="https://maps.google.com/maps/api/staticmap?&amp;channel=ta.desktop.restaurant_review&amp;zoom=15&amp;size=347x137&amp;scale=1&amp;client=gme-tripadvisorinc&amp;format=jpg&amp;sensor=false&amp;language=fr_FR&amp;center=45.746239,4.827410&amp;maptype=roadmap&amp;&amp;markers=icon:http%3A%2F%2Fc1.tacdn.com%2F%2Fimg2%2Fmaps%2Ficons%2Fcomponent_map_pins_v1%2FR_Pin_Small.png|45.746239,4.827410&amp;signature=Dm7nabFAVNPp6Qh75GOOB8kFk4w="></span>
-            <h1>La Source</h1>
+    <main> 
+<div class="hautDePage">
+  <div class="top_title">
+            <h1 id="restaurant_name"></h1>
+            <div id="restaurant_stars"></div>
+          </div>
+            <img src="assets/iconHeart.svg" alt="iconHeart" id="iconHeart">
 
         </div>
 
     <div class="resto">
-        <img src="assets/resto2.webp" alt="intereurResto">
-        <img src="assets/resto3.jpg" alt="plat">
-        <img src="assets/resto1.jpg" alt="chefquisto">
+      <div id="restaurant_images"></div>
     </div>
-
-
-    <img src="assets/iconHeart.svg" alt="iconHeart" id="iconHeart">
-
-
-<div class="contact">
+    <div class="contact_block">
+      <div class="contact_links">
+  <div class="contact-item">
+    <p id="restaurant_type"></p>
+   </div>
 <div class="contact-link">
-    <div class="contact-item">
-        <i class="fas fa-globe"></i>
-        <span><a href="https://lasource.store/">www.RestaurantLaSource.com</a></span>
+  <i class="fas fa-envelope"></i>
+    <a id="restaurant_mail" href=""></a>
     </div>
-    <div class="contact-item">
-         <i class="fas fa-envelope"></i>
-        <span><a href="contact@lasource.store">contact@lasource.store</a></span>
-    </div>
-</div>
+    <div class="contact-link">
+      <i class="fas fa-globe"></i>
 
-<div class="contact-card">
+      <a id="restaurant_website" href=""></a>
+      </div>
+    </div>
+<div class="contact_items">
     <div class="contact-item">
-         <i class="fas fa-map-marker-alt"></i>
-        <span><a class="Hjm6w" href="https://maps.google.fr/maps?hl=fr&amp;gl=fr&amp;um=1&amp;ie=UTF-8&amp;fb=1&amp;sa=X&amp;ftid=0x47f4eafbebcb7065:0xb81f2dfe64f67416" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https%3A%2F%2Fmaps.google.fr%2Fmaps%3Fhl%3Dfr%26gl%3Dfr%26um%3D1%26ie%3DUTF-8%26fb%3D1%26sa%3DX%26ftid%3D0x47f4eafbebcb7065%3A0xb81f2dfe64f67416&amp;ved=0CBMQ4kBqFwoTCPivi5q2tYYDFQAAAAAdAAAAABAG&amp;opi=89978449" style="margin: 12px 0px;"><div class="Tolbie"><div class="Q0abEf"><div class="xPu7Y"></div></div><div class="F2yIXb"><span>17 B Rue Delandine, 69002 Lyon</span></div></div></a>
-    </span>
+      <i class="fas fa-map-marker-alt"></i>
+      <p id="restaurant_address"></p>
      </div>
      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <span>04 87 63 82 87</span>
+      <i class="fas fa-phone"></i>
+      <p id="restaurant_phone"></p>
+     </div>
     </div>
-   
 </div>
-</div>
+</main>
  <footer>
         <p>© 2024 DevelopperTeam All rights reserved | Mentions légales</p>
         <div class="contact-bloc">
@@ -106,5 +103,7 @@
       </footer>
       <script src="restautant_favoris.js"></script>
       <script src="menu_burger.js"></script>
+      <script src="restaurant_details.js"></script>
+
     </body>
 </html>

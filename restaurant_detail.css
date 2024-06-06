@@ -1,86 +1,89 @@
-body {
-  width: 100vw;
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #d8d9e0;
+}
+main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100vh - 84px - 63px);
 }
-
 .hautDePage {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.hautDePage img {
-  border-radius: 10px;
-  width: 200px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
+ 
 
-@media screen and (min-width: 1200px) {
-  .hautDePage {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-  }
-  .hautDePage img {
-    display: none;
-    width: 300px;
-  }
-  .hautDePage h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-
-.resto {
+#restaurant_images {
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.resto img {
+#restaurant_images img {
   margin-bottom: 20px;
+  margin-right: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 12rem;
+}
+.hautDePage h1 {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.top_title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  }
+
+.contact_block {
   width: 100%;
-  max-width: 200px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20rem;
+  font-size: 1.2rem;
+  padding-left: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  .resto {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .resto img {
-    width: 300px;
-    max-width: none;
-  }
+.contact_block p {
+  text-align: start;
+  font-size: 1.2rem;
 }
 
-img {
-  width: 50px;
-  height: 50px;
-  cursor: pointer; /* Change le curseur de la souris pour indiquer que l'image est cliquable */
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .heart-container {
-    justify-content: center;
-  }
+.contact-link {
+  align-items: center;
+  
 }
 
+.contact-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.heart-container {
+  justify-content: center;
+}
 
 .heart {
   font-size: 3em;
@@ -94,53 +97,58 @@ img {
   text-align: center;
   border-radius: 50%;
 }
-
-.contact {
+.contact_links{
+  height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; 
+  justify-content: space-around;
 }
-
-@media screen and (min-width: 1200px) {
-  .contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }  
+.contact_items{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
-.contact-card {
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 600px;
+@media screen and (min-width: 830px) {
+  .hautDePage {
+    justify-content: space-around;
+    width: 80%;
   }
 
-.contact-link {
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 600px;
+  .hautDePage h1 {
+    font-size: 2rem;
+  }
+
+
+  #restaurant_images img {
+    margin-right: 20px;
+    width: 20rem;
+  }
+  .resto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact_block{
+    flex-direction: row;
+    height: 10rem;
+  }
+
+  .contact_links{
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+  }
+  .contact_items{
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+  }
 }
 
-  
-.contact-item {
-display: flex;
-align-items: center;
-margin-bottom: 15px;
-}
 
-.contact-item i {
-margin-right: 10px;
-font-size: 24px;
-color: #333;
-}
-
-.contact-item span,
-.contact-item a {
-font-size: 18px;
-color: #333;
-text-decoration: none;
-}
-
-.contact-item a:hover {
-text-decoration: underline;
-}
