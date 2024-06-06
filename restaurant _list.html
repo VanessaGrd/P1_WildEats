@@ -5,24 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wild Eats</title>
     <link rel="stylesheet" href="restaurant_list.css" />
+    <link rel="stylesheet" href="profile_page.css" />
+    <link rel="stylesheet" href="connexion.css" />
+
+
   </head>
   <body>
     <header>
-      <img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo" />
-      <div class="div_header">
-        <nav class="nav" id="nav">
-          <a href="#">A propos</a>
-          <a href="#">Nous contacter</a>
-          <a href="#">Déconnexion</a>
-        </nav>
-        <img
-          src="assets/avatar.jpg"
-          alt="icone de connexion compte utilisateur"
-          class="profile_icone"
-        />
+      <div class="navbar">
+        <a href="./restaurant _list.html"><img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo"></a>
+        <div class="div_header">
+            <nav class="nav" id="nav">
+                <a href="#">A propos</a>
+                <a href="#">Nous contacter</a>
+                <a href="#">Déconnexion</a>
+            </nav>
+           <a href="./profile_page.html"> <img src="assets/avatar.jpg" alt="icone de connexion compte utilisateur" class="profile_icone"></a>
+        </div>  
+      </div>
+      <div id="root">
+        <a href="./restaurant _list.html"><img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo"></a>
+  
+          <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+      
+          <!-- Responsive Menu -->
+          <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+              <li><a href="./profile_page.html">Mon profil</a></li>
+              <li><a href="">A propos</a></li>
+              <li><a href="">Nous contacter</a></li>
+              <li><a href="">Déconnexion</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+    <main>
+      <div class="restaurant_list" id="restaurant_list"></div>
+    </main>
+    <footer>
+      <p>© 2024 DevelopperTeam All rights reserved | Mentions légales</p>
+      <div class="contact-bloc">
+        <a href="hjgyfuyf">
+          <img src="/assets/logo_instagram.svg" />
+        </a>
+        <a href="jhiugiy">
+          <img src="/assets/logo_facebook.svg" />
+        </a>
+        <a href="jhiugiy">
+          <img src="/assets/logo_twitter.svg" />
+        </a>
+        <a href="hgfiygj">
+          <img src="/assets/logo_gmail.svg" />
+        </a>
+      </div>
+    </footer>
     <script src="./menu_burger.js"></script>
+    <script src="./restaurant_list.js"></script>
+
 
   </body>
 </html>

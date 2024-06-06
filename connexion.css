@@ -19,11 +19,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   z-index: 99;
   position: fixed;
   bottom: 0;
   left: 0;
+  background-color: #D8D9E0;
   align-items: center;
 }
 
@@ -32,13 +33,6 @@ p {
   padding: 5px;
 }
 
-@media screen and (max-width: 1270px) {
-  footer {
-    width: 100%;
-    flex-direction: column-reverse;
-    position: relative;
-  }
-}
 @media screen and (max-width: 600px) {
 
   .contact-bloc {
@@ -48,4 +42,9 @@ p {
   p{
     font-size: 10px;
   }
+
+  footer {
+    width: 100vw;
+    flex-direction: column-reverse;
+ }
 }
