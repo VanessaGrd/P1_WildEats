@@ -94,5 +94,166 @@
     "email": "contact@burgerhouse.fr",
     "website": "http://www.burgerhouse.fr",
     "phone": "+33 4 78 42 17 17"
+  },
+  {
+    "id": 1,
+    "name": "Le Petit Bistro",
+    "images": [
+      "https://source.unsplash.com/1600x900/?bistro,restaurant",
+      "https://source.unsplash.com/1600x900/?french,cuisine",
+      "https://source.unsplash.com/1600x900/?bistro,food"
+    ],
+    "address": "17 rue Delandine 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "French",
+    "email": "contact@lepetitbistro.fr",
+    "website": "http://www.lepetitbistro.fr",
+    "phone": "+33 4 78 42 12 12"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Italiana",
+    "images": [
+      "https://source.unsplash.com/1600x900/?pizza,italian",
+      "https://source.unsplash.com/1600x900/?pizza,food",
+      "https://source.unsplash.com/1600x900/?pizza,restaurant"
+    ],
+    "address": "22 rue de la République 69002 Lyon",
+    "stars": 2,
+    "favorite": false,
+    "type": "Pizza",
+    "email": "contact@pizzaitaliana.fr",
+    "website": "http://www.pizzaitaliana.fr",
+    "phone": "+33 4 78 42 13 13"
+  },
+  {
+    "id": 3,
+    "name": "Japanese Sushi",
+    "images": [
+      "https://source.unsplash.com/1600x900/?sushi,restaurant",
+      "https://source.unsplash.com/1600x900/?sushi,food",
+      "https://source.unsplash.com/1600x900/?japanese,sushi"
+    ],
+    "address": "10 rue Sainte-Catherine 69002 Lyon",
+    "stars": 4,
+    "favorite": true,
+    "type": "Sushi",
+    "email": "contact@japanesesushi.fr",
+    "website": "http://www.japanesesushi.fr",
+    "phone": "+33 4 78 42 15 15"
+  },
+  {
+    "id": 4,
+    "name": "Vegan Delight",
+    "images": [
+      "https://source.unsplash.com/1600x900/?vegan,restaurant",
+      "https://source.unsplash.com/1600x900/?vegan,food",
+      "https://source.unsplash.com/1600x900/?vegan,cuisine"
+    ],
+    "address": "27 Rue des Marronniers 69002 Lyon",
+    "stars": 5,
+    "favorite": true,
+    "type": "Vegan",
+    "email": "contact@vegandelight.fr",
+    "website": "http://www.vegandelight.fr",
+    "phone": "+33 4 78 42 19 19"
+  },
+  {
+    "id": 5,
+    "name": "Burger House",
+    "images": [
+      "https://source.unsplash.com/1600x900/?burger,restaurant",
+      "https://source.unsplash.com/1600x900/?burger,food",
+      "https://source.unsplash.com/1600x900/?burger,cuisine"
+    ],
+    "address": "20 Quai Rambaud 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Burger",
+    "email": "contact@burgerhouse.fr",
+    "website": "http://www.burgerhouse.fr",
+    "phone": "+33 4 78 42 17 17"
+  },
+  {
+    "id": 6,
+    "name": "Asia Fusion",
+    "images": [
+      "https://source.unsplash.com/1600x900/?asian,restaurant",
+      "https://source.unsplash.com/1600x900/?asian,food",
+      "https://source.unsplash.com/1600x900/?asian,cuisine"
+    ],
+    "address": "48 Quai Saint-Antoine 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Cuisine asiatique",
+    "email": "contact@asiafusion.fr",
+    "website": "http://www.asiafusion.fr",
+    "phone": "+33 4 78 42 20 20"
+  },
+  {
+    "id": 7,
+    "name": "La Dolce Vita",
+    "images": [
+      "https://source.unsplash.com/1600x900/?italian,restaurant",
+      "https://source.unsplash.com/1600x900/?italian,food",
+      "https://source.unsplash.com/1600x900/?italian,cuisine"
+    ],
+    "address": "52 Rue Mercière 69002 Lyon",
+    "stars": 5,
+    "favorite": true,
+    "type": "Cuisine italienne",
+    "email": "contact@ladolcevita.fr",
+    "website": "http://www.ladolcevita.fr",
+    "phone": "+33 4 78 42 21 21"
+  },
+  {
+    "id": 8,
+    "name": "Mexican Fiesta",
+    "images": [
+      "https://source.unsplash.com/1600x900/?mexican,restaurant",
+      "https://source.unsplash.com/1600x900/?mexican,food",
+      "https://source.unsplash.com/1600x900/?mexican,cuisine"
+    ],
+    "address": "14 Rue de la Charité 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Cuisine mexicaine",
+    "email": "contact@mexicanfiesta.fr",
+    "website": "http://www.mexicanfiesta.fr",
+    "phone": "+33 4 78 42 21 21"
+  },
+  {
+    "id": 9,
+    "name": "Croissant Corner",
+    "images": [
+      "https://source.unsplash.com/1600x900/?croissant,restaurant",
+      "https://source.unsplash.com/1600x900/?croissant,food",
+      "https://source.unsplash.com/1600x900/?croissant,cuisine"
+    ],
+    "address": "9 Place Bellecour 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Croissant sandwich",
+    "email": "contact@croissantcorner.fr",
+    "website": "http://www.croissantcorner.fr",
+    "phone": "+33 4 78 42 22 22"
+  },
+  {
+    "id": 10,
+    "name": "Green Salad",
+    "images": [
+      "https://source.unsplash.com/1600x900/?salad,restaurant",
+      "https://source.unsplash.com/1600x900/?salad,food",
+      "https://source.unsplash.com/1600x900/?salad,cuisine"
+    ],
+    "address": "5 Rue des Marronniers 69002 Lyon",
+    "stars": 5,
+    "favorite": false,
+    "type": "Salade",
+    "email": "contact@greensalad.fr",
+    "website": "http://www.greensalad.fr",
+    "phone": "+33 4 78 42 16 16"
   }
+  
 ]
