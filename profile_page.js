@@ -9,8 +9,8 @@ function generateStars(count) {
 function createFavoriteCard(restaurant) {
   return `
   <a href="restaurant_detail.html?id=${restaurant.id}" class="restaurant_card">
-  <img class="restaurant_picture" src="${restaurant.image}" alt="${restaurant.name}">
-      <div class="title">
+  <img class="restaurant_picture" src="${restaurant.images[0]}" alt="${restaurant.name}"/>
+  <div class="title">
         <div class="stars_like">
           <div class="stars_block">
             <h3>${restaurant.name}</h3>
