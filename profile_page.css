@@ -28,7 +28,7 @@ body {
   background-color: #fcfcfd;
   color: black;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 250px;
   width: 20rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .user_informations {
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 100%;
   list-style-type: none;
   display: flex;
@@ -166,5 +166,10 @@ body {
   .user_profile {
     min-width: 250px;
     width: 30rem;
+  }
+
+  .favorite_list{
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
