@@ -14,6 +14,7 @@ main {
   justify-content: space-around;
   height: calc(100vh - 84px - 63px);
 }
+
 .hautDePage {
   display: flex;
   flex-direction: row;
@@ -22,7 +23,6 @@ main {
   margin-bottom: 20px;
   margin-top: 20px;
 }
- 
 
 #restaurant_images {
   align-items: center;
@@ -43,12 +43,11 @@ main {
   font-size: 1.4rem;
   margin-right: 10px;
 }
-.top_title{
+.top_title {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  }
+}
 
 .contact_block {
   width: 100%;
@@ -73,7 +72,6 @@ main {
 
 .contact-link {
   align-items: center;
-  
 }
 
 .contact-link a {
@@ -97,13 +95,13 @@ main {
   text-align: center;
   border-radius: 50%;
 }
-.contact_links{
+.contact_links {
   height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.contact_items{
+.contact_items {
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -119,7 +117,6 @@ main {
     font-size: 2rem;
   }
 
-
   #restaurant_images img {
     margin-right: 20px;
     width: 20rem;
@@ -134,21 +131,21 @@ main {
     margin-bottom: 20px;
   }
 
-  .contact_block{
+  .contact_block {
     flex-direction: row;
     height: 10rem;
   }
 
-  .contact_links{
+  .contact_links {
     display: flex;
     flex-direction: column;
-justify-content: space-around;
+    justify-content: space-around;
+    height: 100%;
   }
-  .contact_items{
+  .contact_items {
     display: flex;
     flex-direction: column;
-justify-content: space-around;
+    justify-content: space-around;
+    height: 100%;
   }
 }
-
-

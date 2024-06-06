@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wild Eats</title>
-
   <link rel="stylesheet" href="connexion.css" type="text/css">
   <link rel="stylesheet" href="footer.css" type="text/css">
-  
-
-
-
 </head>
-
 <body>
   <header>
-    
     <div class="logo">
       <p class="titre1">WILD</p>
       <p class="titre2">EATS</p>
     </div>
     <div class="connexion-bouton">
-
       <button class="B3" name="button" type="button">Inscription</button>
       <button class="B2" name="button" type="button">Connexion</button>
     </div>
@@ -31,19 +22,17 @@
     <div class="background"></div>
     <form class="connexionForm">
       <p class="p1">Connectez-vous</p>
-      <label for="mail">Adresse mail</label>
-      <input type="email" id="mail" class="input">
-      <label for="mot de passe">Mot de passe</label>
-      <input type="password" id="mot de passe" class="input">
-      <button class="B1" name="button" type="button">Validez</button>
+      <label for="loginMail">Adresse mail</label>
+      <input type="email" id="loginMail" class="input">
+      <label for="loginPassword">Mot de passe</label>
+      <input type="password" id="loginPassword" class="input">
+      <button class="B1" name="button" type="button" id="loginButton">Validez</button>
       <span class="close">&times;</span>
     </form>
 
     <form class="inscriptionForm">
       <h2 class="title_inscription_form">Inscrivez-vous</h2>
       <div class="inscriptionBloc">
-       
-        
         <div class="input_bloc">
           <label for="name">Prénom</label>
           <input type="text" id="name" class="input2">
@@ -55,59 +44,47 @@
       </div>
       <div class="inscriptionBloc">
         <div class="input_bloc">
-          <label for="adress">Adresse</label>
-          <input type="text" id="adress" class="input2">
+          <label for="address">Adresse</label>
+          <input type="text" id="address" class="input2">
         </div>
         <div class="input_bloc">
           <label for="tel">Téléphone</label>
           <input type="number" id="tel" class="input2">
         </div>
       </div>
-
-        <div class="inscriptionBloc">
-          <div class="input_bloc">
-            <label for="campus">Campus</label>
-            <input type="text" id="campus" class="input2">
-          </div>
-          <div class="input_bloc">
-            <label for="mail">Adresse mail</label>
-            <input type="email" id="mail" class="input2">
-          </div>
+      <div class="inscriptionBloc">
+        <div class="input_bloc">
+          <label for="campus">Campus</label>
+          <input type="text" id="campus" class="input2">
         </div>
-          <div class="inscriptionBloc">
-            <div class="input_bloc">
-              <label for="password">Mot de passe</label>
-              <input type="password" id="mot de passe" class="input2">
-            </div>
-            <div class="input_bloc">
-              <label for="confirmPassword">Confirmation du mot de passe</label>
-              <input type="password" id="confirmPassword" class="input2">
-            </div>
-          </div>
-
-            <div>
-              <button class="B4" name="button" type="button">Validez</button>
-              <span class="close2">&times;</span>
+        <div class="input_bloc">
+          <label for="registerMail">Adresse mail</label>
+          <input type="email" id="registerMail" class="input2">
+        </div>
+      </div>
+      <div class="inscriptionBloc">
+        <div class="input_bloc">
+          <label for="registerPassword">Mot de passe</label>
+          <input type="password" id="registerPassword" class="input2">
+        </div>
+        <div class="input_bloc">
+          <label for="confirmPassword">Confirmation du mot de passe</label>
+          <input type="password" id="confirmPassword" class="input2">
+        </div>
+      </div>
+      <button class="B4" name="button" type="submit" id="registerButton">Validez</button>
+      <span class="close2">&times;</span>
     </form>
   </main>
   <footer>
     <p>© 2024 DevelopperTeam All rights reserved | Mentions légales</p>
     <div class="contact-bloc">
-      <a href="#">
-        <img src="/assets/logo_instagram.svg" />
-      </a>
-      <a href="#">
-        <img src="/assets/logo_facebook.svg" />
-      </a>
-      <a href="#">
-        <img src="/assets/logo_twitter.svg" />
-      </a>
-      <a href="#">
-        <img src="/assets/logo_gmail.svg" />
-      </a>
+      <a href="#"><img src="/assets/logo_instagram.svg" /></a>
+      <a href="#"><img src="/assets/logo_facebook.svg" /></a>
+      <a href="#"><img src="/assets/logo_twitter.svg" /></a>
+      <a href="#"><img src="/assets/logo_gmail.svg" /></a>
     </div>
   </footer>
   <script src="connexion.js"></script>
 </body>
-
 </html>
