@@ -22,6 +22,7 @@ main {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+ 
 
 #restaurant_images {
   align-items: center;
@@ -42,6 +43,12 @@ main {
   font-size: 1.4rem;
   margin-right: 10px;
 }
+.top_title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  }
 
 .contact_block {
   width: 100%;
@@ -104,12 +111,14 @@ main {
 }
 @media screen and (min-width: 830px) {
   .hautDePage {
-    justify-content: center;
+    justify-content: space-around;
+    width: 80%;
   }
 
   .hautDePage h1 {
     font-size: 2rem;
   }
+
 
   #restaurant_images img {
     margin-right: 20px;
