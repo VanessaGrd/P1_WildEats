@@ -3,19 +3,11 @@
   padding: 0;
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+
 
 header {
   text-align: center;
   padding: 20px;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -102,6 +94,7 @@ footer {
   background-color: rgb(236, 233, 233);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  display:none;
 }
 
 .inscriptionForm {
@@ -121,6 +114,7 @@ footer {
   background-color: rgb(236, 233, 233);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  display: none;
 }
 
 
@@ -278,67 +272,15 @@ p {
   text-align: left;
   padding-left: 5px;
 }
-
 @media screen and (max-width: 600px) {
-  .connexion-bouton {
-    flex-direction: column;
-  }
-
   footer {
     width: 100%;
     flex-direction: column-reverse;
     position: relative;
   }
-
   .contact-bloc {
 
     width: 100%;
     justify-content: space-around;
   }
-
-  .background {
-    width: 100%;
-    height: 100vh; 
-  }
-  .connexionForm {
-    width: 200px;  
-    height: 200px;
-    position: relative; 
-    top: 0;
-    transform: none;
-    margin: 0 auto; 
-    margin-top: 20px; 
-    gap: 10px;
-  }
-
-  .titre1 {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-}
-
-.titre2 {
-  font-size: 15px;
-  text-align: center;
-}
-
-.p1 {
-  font-weight: bold;
-  font-size: 20px;
-
-}
-p {
-  font-size: 12 px;
-  word-spacing: 10px;
-  text-align: left;
-  padding-left: 5px;
-}
-  .input{
-    width: 200px;;
-  }
-
-  label {
-    font-size: 16px;
-  }
-  
 }
