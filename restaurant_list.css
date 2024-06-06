@@ -125,6 +125,12 @@ div.scroll-container {
     display: flex;
   }
 }
+
+@media screen and (max-width: 829px) {
+  .restaurant_list {
+      gap: 30px;
+  }
+}
   /* ******************** MENU BURGER ******************** */
 
   /* hide responsive menu */

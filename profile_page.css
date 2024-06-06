@@ -76,7 +76,7 @@
 }
 
 .title p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 5px;
 }
 
@@ -108,7 +108,6 @@
 
 
 @media screen and (min-width: 830px) {
-
   .restaurant_list {
     flex-wrap: wrap;
     flex-direction: row;
