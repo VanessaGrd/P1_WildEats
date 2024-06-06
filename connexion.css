@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 
@@ -16,18 +17,18 @@ header {
 
 
 .background {
-    top: 0;
-    left: 0;
-    width: 50%; 
-    height: 100%;
-    background-image: url("/assets/fond ecran nourriture.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    z-index: -1; 
-    position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/fond ecran nourriture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: -1;
+  position: absolute;
 
-  
+
 }
 
 
@@ -47,7 +48,7 @@ header {
   justify-content: space-around;
   display: flex;
   flex-direction: row;
-  
+
 }
 
 .titre1 {
@@ -78,7 +79,7 @@ header {
   background-color: rgb(236, 233, 233);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  display:none;
+  display: none;
 }
 
 .inscriptionForm {
@@ -118,6 +119,7 @@ header {
   cursor: pointer;
 
 }
+
 .close2 {
   position: absolute;
   font-size: 35px;
@@ -148,17 +150,17 @@ header {
   border: none;
 }
 
-.input_bloc{
+.input_bloc {
   display: flex;
   flex-direction: column;
 }
 
-.inscriptionBloc{
+.inscriptionBloc {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
- 
+
 }
 
 .B1 {
@@ -190,6 +192,10 @@ header {
   width: 150px;
   border: none;
   transition: all .5 ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .B3 {
@@ -203,7 +209,12 @@ header {
   width: 150px;
   border: none;
   transition: all .5 ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .B4 {
   background-color: #0E8345;
   border-radius: 10px;
@@ -212,14 +223,15 @@ header {
   word-spacing: 2px;
   font-size: 18px;
   height: 35px;
-  width:100px;
+  width: 100px;
   border: none;
   transition: all .5 ease-in-out;
 }
+
 button:hover {
   opacity: .8;
   transform: scale(1.02);
-  cursor: pointer; 
+  cursor: pointer;
 
 }
 
@@ -229,18 +241,24 @@ label {
 
 @media screen and (max-width: 600px) {
 
-.background {
-  width: 100%; 
-}
+  .background {
+    width: 100%;
+  }
 
-.connexionForm {
+  .connexionForm {
 
-  width: 300px;
-  
-  
-}
+    width: 300px;
+  }
 
+  .connexion-bouton {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .B2,
+  .B3 {
+    width: 120px;
+  }
 
 
 }
