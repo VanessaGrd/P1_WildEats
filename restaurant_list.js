@@ -1,10 +1,16 @@
 const logos = {
-    "French": "./assets/",
-    "Italian": "./assets/star.svg",
-    "Japanese": "./assets/star.svg",
-    "Vegetarian": "./assets/star.svg",
-    "Burger": "./assets/star.svg",
-  };
+    "Pizza": "./assets/pizza.png",
+    "Japanese": "./assets/sushi.png",
+    "Vegetarian": "./assets/burger-vegetalien.png",
+    "Burger": "./assets/burger.png",
+    "Asian": "./assets/cuisine_asiatique.png",
+    "Italian": "./assets/cuisine_italienne.png",
+    "Mexicain": "./assets/cuisine_mexicaine.png",
+    "Croissant": "./assets/croissant.png",
+    "Sandwich": "./assets/sandwich.png",
+    "Salade": "./assets/salade.png",
+    "French": "./assets/repas.png",
+  }
   
   function generateStars(count) {
     let starsHtml = "";
@@ -32,6 +38,7 @@ const logos = {
   });
 
   function createRestaurantCard(restaurant) {
+    console.log(logos, logos[restaurant.type])
     return `
       <a href="restaurant_detail.html?id=${restaurant.id}" class="restaurant_card">
         <img class="restaurant_picture" src="${restaurant.image}" alt="${restaurant.name}"/>

@@ -102,7 +102,7 @@
     "address": "48 Quai Saint-Antoine 69002 Lyon",
     "stars": 4,
     "favorite": false,
-    "type": "Cuisine asiatique",
+    "type": "Asian",
     "email": "contact@asiafusion.fr",
     "website": "http://www.asiafusion.fr",
     "phone": "+33 4 78 42 20 20"
@@ -114,7 +114,7 @@
     "address": "14 Rue de la Charité 69002 Lyon",
     "stars": 4,
     "favorite": false,
-    "type": "Cuisine mexicaine",
+    "type": "Mexicain",
     "email": "contact@mexicanfiesta.fr",
     "website": "http://www.mexicanfiesta.fr",
     "phone": "+33 4 78 42 21 21"
@@ -126,7 +126,7 @@
     "address": "9 Place Bellecour 69002 Lyon",
     "stars": 4,
     "favorite": false,
-    "type": "Croissant sandwich",
+    "type": "Croissant",
     "email": "contact@croissantcorner.fr",
     "website": "http://www.croissantcorner.fr",
     "phone": "+33 4 78 42 22 22"

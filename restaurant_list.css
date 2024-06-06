@@ -51,12 +51,17 @@ nav a {
 }
 /************** MAIN **************/
 
+/************** FILTER CUISINE *************/
+
+
+
 /************** DEBUT CARROUSSEL hORIZONTAL **************/
 div.scroll-container {
-    width: 100%;
+  width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
     overflow: auto;
     white-space: nowrap;
     padding: 5px;
@@ -99,12 +104,16 @@ div.scroll-container {
 /************** FIN CARROUSSEL HORIZONTAL **************/
 
 #root img {
-  display: none;
+  display: non;
+}
 /* hide responsive menu */
 #topnav_hamburger_icon,
 #topnav_responsive_menu {
   display: none;
 }
+
+#root {
+  display: none;
 }
 /*Partie @MediaQueries pour le responsive*/
 
@@ -274,4 +283,23 @@ div.scroll-container {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  .restaurant_type {
+
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .nav_mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (min-width:831px) {
+    .nav_mobile {
+      display: none;
+    }
   }
