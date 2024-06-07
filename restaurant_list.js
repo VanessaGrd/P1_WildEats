@@ -5,7 +5,7 @@ const logos = {
     "Burger": "./assets/burger.png",
     "Asian": "./assets/cuisine_asiatique.png",
     "Italian": "./assets/cuisine_italienne.png",
-    "Mexicain": "./assets/cuisine_mexicaine.png",
+    "Mexican": "./assets/cuisine_mexicaine.png",
     "Croissant": "./assets/croissant.png",
     "Sandwich": "./assets/sandwich.png",
     "Salade": "./assets/salade.png",
@@ -24,19 +24,23 @@ const logos = {
   
   document.addEventListener("DOMContentLoaded", function () {
     const restaurantListContainer = document.getElementById("restaurant_list");
+    let allRestaurants = [];
   
     fetch('./data/restaurants.json')
       .then(response => response.json())
       .then(data => {
-        const proposals = data.filter(restaurant => !restaurant.favorite);
-        console.log('Proposals:', proposals);
-        proposals.forEach(restaurant => {
-          restaurantListContainer.innerHTML += createRestaurantCard(restaurant);
-        });
+        allRestaurants = data.filter(restaurant => !restaurant.favorite);
+        displayRestaurants(allRestaurants);
       })
       .catch(error => console.error('Error fetching restaurant data:', error));
-  });
-
+  
+    function displayRestaurants(restaurants) {
+      restaurantListContainer.innerHTML = "";
+      restaurants.forEach(restaurant => {
+        restaurantListContainer.innerHTML += createRestaurantCard(restaurant);
+      });
+    }
+  
   function createRestaurantCard(restaurant) {
     console.log(logos, logos[restaurant.type])
     return `
@@ -55,3 +59,12 @@ const logos = {
       </a>
     `;
   }
+  const filters = document.querySelectorAll('.iconText');
+  filters.forEach(filter => {
+    filter.addEventListener('click', () => {
+      const type = filter.querySelector('p').innerText;
+      const filteredRestaurants = allRestaurants.filter(restaurant => restaurant.type === type);
+      displayRestaurants(filteredRestaurants);
+    });
+  });
+});

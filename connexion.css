@@ -23,13 +23,14 @@ main {
 .logo {
   display: flex;
   flex-direction: column;
-  padding-right: 50px;
   align-items: end;
 }
-
+.logo img{
+  width: 15rem;
+}
 .connexion-bouton {
   width: 50%;
-  height: 100%;
+  height: 80%;
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -230,9 +231,7 @@ label {
   .logo {
     display: none;
   }
-  .connexionForm {
-    width: 300px;
-  }
+
 
   .connexion-bouton {
     display: flex;
@@ -263,7 +262,8 @@ label {
   }
 
   .connexionForm{
-    margin-right: 50px;
+    width: 90%;
+    margin-right: 10px;
 
   }
   .inscriptionBloc {
