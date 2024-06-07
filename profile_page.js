@@ -44,3 +44,29 @@ function createRestaurantCard(restaurant) {
     </a>
   `;
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+  if (loggedInUser) {
+    document.getElementById("userName").textContent = `${loggedInUser.name}`;
+    document.getElementById("firstName").textContent = `${loggedInUser.surname}`;
+    document.getElementById("address").textContent = `${loggedInUser.address}`;
+    document.getElementById("tel").textContent = `${loggedInUser.tel}`;
+    document.getElementById("campus").textContent = `${loggedInUser.campus}`;
+    document.getElementById("email").textContent = `${loggedInUser.email}`;
+
+
+  
+    const logoutButton = document.getElementById("logoutButton");
+    logoutButton.addEventListener("click", () => {
+      localStorage.removeItem("loggedInUser");
+      alert("Déconnexion réussie !");
+      // Redirection vers la page de connexion ou d'accueil
+    });
+  } else {
+    alert("Vous devez être connecté pour accéder à cette page.");
+    // Redirection vers la page de connexion ou d'accueil
+  }
+});

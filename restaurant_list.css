@@ -3,8 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: #D8D9E0;
+  background-color: #d8d9e0;
+  height: 100%;
+}
+
+
+main {
+  min-height: calc(100vh - (88px + 50px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav {
@@ -24,8 +34,8 @@ nav {
 }
 
 .nav a:hover {
- color: #0e8345;
- transition: all 0.1s ease-in-out;
+  color: #0e8345;
+  transition: all 0.1s ease-in-out;
 }
 
 .logo {
@@ -56,6 +66,45 @@ nav {
   padding-right: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+/************** MAIN **************/
+
+/************** FILTER CUISINE *************/
+
+/************** DEBUT CARROUSSEL hORIZONTAL **************/
+.scroll-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.titre_filtre {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.icon_filter {
+  width: 60px;
+  height: 60px;
+}
+
+.iconText {
+  padding: 5px;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/************** FIN CARROUSSEL HORIZONTAL **************/
 
 #root img {
   display: none;
@@ -64,6 +113,16 @@ nav {
 #topnav_hamburger_icon,
 #topnav_responsive_menu {
   display: none;
+}
+
+#root {
+  display: none;
+}
+
+.restaurant_type {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
 }
 /*Partie @MediaQueries pour le responsive*/
 @media (max-width: 1024px) {
@@ -232,5 +291,16 @@ nav {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  .restaurant_type {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .scroll-container{
+    margin-bottom: 20px;
+
   }
 }
