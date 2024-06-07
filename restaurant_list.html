@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Eats</title>
+    <link rel="stylesheet" href="restaurant_list.css" />
+    <link rel="stylesheet" href="footer.css" >
+    <link rel="stylesheet" href="profile_page.css" />
+
+
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="./restaurant_list.html"><img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo"></a>
+        <div class="div_header">
+            <nav class="nav" id="nav">
+                <a href="#">A propos</a>
+                <a href="#">Nous contacter</a>
+                <a href="./index.html"id="logoutButton" >Déconnexion</a>
+            </nav>
+           <a href="./profile_page.html"> <img src="assets/avatar.jpg" alt="icone de connexion compte utilisateur" class="profile_icone"></a>
+        </div>  
+      </div>
+      <div id="root">
+        <a href="./restaurant_list.html"><img src="assets/Wild-removebg-preview_1.webp" alt="" class="logo"></a>
+  
+          <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+      
+          <!-- Responsive Menu -->
+          <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+              <li><a href="./profile_page.html">Mon profil</a></li>
+              <li><a href="">A propos</a></li>
+              <li><a href="">Nous contacter</a></li>
+              <li> <a href="./index.html"id="logoutButton" >Déconnexion</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section class="filter_cuisine">
+            <h2 class="titre_filtre">Restaurants autour de la Wild Code School</h2>
+            <div class="scroll-container">
+              <span class="iconText">
+                  <img src="assets/pizza.png" alt="pizza" class="icon_filter"/>
+                  <p>Pizza</p>
+              </span>
+              <span class="iconText">
+                  <img src="assets/burger.png" alt="burger" class="icon_filter"/>
+                  <p>Burger</p>
+              </span>
+              <span class="iconText">
+                  <img src="assets/cuisine_asiatique.png" alt="cuisine cuisine_asiatique" class="icon_filter"/>
+                  <p>Japanese</p>
+              </span>
+              <span class="iconText">
+                  <img src="assets/cuisine_italienne.png" alt="cuisine cuisine_italienne" class="icon_filter"/>
+                  <p>Italian</p>
+              </span>
+              <span class="iconText">
+                  <img src="assets/cuisine_mexicaine.png" alt="cuisine mexicaine" class="icon_filter"/>
+                  <p>Mexican</p>
+              </span>
+              <span class="iconText">
+                  <img src="assets/croissant.png" alt="croissant" class="icon_filter"/>
+                  <p>Croissant</p>
+              </span>
+              <span class="iconText">
+                  <img src="assets/sandwich.png" alt="sandwich" class="icon_filter"/>
+                  <p>Sandwich</p>
+              </span>
+              <span class="iconText">
+                  <img src="assets/salade.png" alt="cuisine_asiatique" class="icon_filter"/>
+                  <p>Vegetarian</p>
+              </span>
+              <span class="iconText">
+                  <img src="./assets/repas.png" alt="cuisine_italienne" class="icon_filter">
+                  <p>French</p>
+              </span>
+          </div>
+
+        </section>
+        <div class="restaurant_list" id="restaurant_list">
+
+        </div>
+    </main>
+
+    <footer>
+      <p>© 2024 DevelopperTeam All rights reserved | Mentions légales</p>
+      <div class="contact-bloc">
+        <a href="#">
+          <img src="/assets/logo_instagram.svg" />
+        </a>
+        <a href="#">
+          <img src="/assets/logo_facebook.svg" />
+        </a>
+        <a href="#">
+          <img src="/assets/logo_twitter.svg" />
+        </a>
+        <a href="#">
+          <img src="/assets/logo_gmail.svg" />
+        </a>
+      </div>
+    </footer>
+    <script src="./menu_burger.js"></script>
+    <script src="./restaurant_list.js"></script>
+    <script src="./profile_page.js"></script>
+
+
+
+</body>
+</html>

@@ -5,18 +5,16 @@
 }
 
 body {
-  background-color: #D8D9E0;
+  background-color: #d8d9e0;
   height: 100%;
 }
 
-header {
-  height: 100px;
-  
-}
-main {
-  min-height: calc(100vh - (130px + 50px));
 
-  
+main {
+  min-height: calc(100vh - (88px + 50px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav {
@@ -36,8 +34,8 @@ nav {
 }
 
 .nav a:hover {
- color: #0e8345;
- transition: all 0.1s ease-in-out;
+  color: #0e8345;
+  transition: all 0.1s ease-in-out;
 }
 
 .logo {
@@ -72,43 +70,39 @@ nav {
 
 /************** FILTER CUISINE *************/
 
-
-
 /************** DEBUT CARROUSSEL hORIZONTAL **************/
 .scroll-container {
   width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 5px;
-   
-  }
-  
-  div.scroll-container img {
-    padding: 10px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
 
-  .titre_filtre {
-    font-size: 14px;
-    margin-left: 5px;
-    margin-top: 10px;
-  }
+div.scroll-container img {
+  padding: 10px;
+  cursor: pointer;
+}
 
-  .icon_filter {
-    width: 60px;
-    height: 60px;
-  }
+.titre_filtre {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
 
-  .iconText {
-    padding: 5px;
-    /* background-color: yellow; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.icon_filter {
+  width: 60px;
+  height: 60px;
+}
 
-  }
+.iconText {
+  padding: 5px;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /************** FIN CARROUSSEL HORIZONTAL **************/
 
@@ -123,11 +117,9 @@ nav {
 
 #root {
   display: none;
-  
 }
 
 .restaurant_type {
-
   width: 30px;
   height: 30px;
   margin-bottom: 5px;
@@ -141,7 +133,6 @@ nav {
     display: flex;
   }
 
- 
   /* ******************** MENU BURGER ******************** */
 
   /* hide responsive menu */
@@ -303,11 +294,13 @@ nav {
   }
 
   .restaurant_type {
-
     width: 30px;
     height: 30px;
     margin-bottom: 5px;
   }
 
+  .scroll-container{
+    margin-bottom: 20px;
 
+  }
 }

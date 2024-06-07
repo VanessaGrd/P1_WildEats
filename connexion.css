@@ -1,54 +1,41 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 
-
-
-header {
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
+body {
+  background-color: #d8d9e0;
 }
 
-
-
-.background {
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-image: url("/assets/fond ecran nourriture.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: -1;
-  position: absolute;
-
-
-}
-
-
-.logo {
-
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  height: 100%;
-  justify-content: center;
-
-}
-
-.connexion-bouton {
-  width: 40%;
-  height: 100%;
-  justify-content: space-around;
+main {
+  height: calc(100vh - 40px - 50px);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
 
+.background img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.logo img{
+  width: 15rem;
+}
+.connexion-bouton {
+  width: 50%;
+  height: 80%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 70px;
 }
 
 .titre1 {
@@ -74,11 +61,12 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 22px;
+  margin-right: 100px;
   padding: 10px;
   background-color: rgb(236, 233, 233);
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   display: none;
 }
 
@@ -94,20 +82,18 @@ header {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin: 22px;
+  margin-right: 100px;
   padding: 10px;
   background-color: rgb(236, 233, 233);
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   display: none;
 }
-
-
 
 .p1 {
   font-weight: bold;
   font-size: 30px;
-
 }
 
 .close {
@@ -117,7 +103,6 @@ header {
   top: 0px;
   right: 5px;
   cursor: pointer;
-
 }
 
 .close2 {
@@ -128,13 +113,6 @@ header {
   right: 5px;
   cursor: pointer;
 }
-
-.fond-ecran {
-  width: 100%;
-  height: 100%;
-}
-
-
 
 .input {
   height: 37px;
@@ -159,15 +137,15 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: auto;
   justify-content: space-around;
-
 }
 
 .B1 {
-
   display: flex;
-  background-color: #0E8345;
+  background-color: #0e8345;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
   font-weight: bold;
   color: white;
@@ -178,45 +156,41 @@ header {
   width: 200px;
   border: none;
   margin: 5px;
-  transition: all .5 ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .B2 {
-  background-color: #0E8345;
+  background-color: #0e8345;
   border-radius: 10px;
   font-weight: bold;
   color: white;
   word-spacing: 2px;
   font-size: 18px;
-  height: 35px;
-  width: 150px;
+  height: 55px;
+  width: 250px;
   border: none;
-  transition: all .5 ease-in-out;
-  display: flex;
-  justify-content: center;
+  transition: all 0.5 ease-in-out;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 
 .B3 {
-  background-color: #0E8345;
+  background-color: #0e8345;
   border-radius: 10px;
   font-weight: bold;
   color: white;
   word-spacing: 2px;
   font-size: 18px;
-  height: 35px;
-  width: 150px;
+  height: 55px;
+  width: 250px;
   border: none;
-  transition: all .5 ease-in-out;
-  display: flex;
-  justify-content: center;
+  transition: all 0.5 ease-in-out;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 
 .B4 {
-  background-color: #0E8345;
+  background-color: #0e8345;
   border-radius: 10px;
   font-weight: bold;
   color: white;
@@ -225,40 +199,78 @@ header {
   height: 35px;
   width: 100px;
   border: none;
-  transition: all .5 ease-in-out;
+  align-items: center;
+  transition: all 0.5 ease-in-out;
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
   transform: scale(1.02);
   cursor: pointer;
-
 }
 
 label {
   font-size: 20px;
 }
+.logo_picture {
+  display: none;
+}
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 1245px) {
   .background {
-    width: 100%;
+    display: none;
+  }
+  .logo_picture {
+    display: flex;
+    width: 15rem;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    display: none;
   }
 
-  .connexionForm {
-
-    width: 300px;
-  }
 
   .connexion-bouton {
     display: flex;
     flex-direction: column;
+    height: 50vh;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 180px - 50px);
+  }
+  .connexion-bouton {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .inscriptionForm {
+    width: 90%;
+    height: 40rem;
+    justify-content: space-around;
+    gap: 0px;
+    margin: 0px;
+    padding: 10px;
+    right: 10px;
+    top: 540px;
   }
 
-  .B2,
-  .B3 {
-    width: 120px;
+  .connexionForm{
+    width: 90%;
+    margin-right: 10px;
+
   }
-
-
+  .inscriptionBloc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

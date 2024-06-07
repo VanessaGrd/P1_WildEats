@@ -57,7 +57,7 @@
     ],
     "address": "10 rue Sainte-Catherine 69002 Lyon",
     "stars": 4,
-    "favorite": true,
+    "favorite": false,
     "type": "Japanese",
     "email": "contact@japanesesushi.fr",
     "website": "http://www.japanesesushi.fr",
@@ -83,9 +83,9 @@
     "id": 6,
     "name": "Burger House",
     "images": [
+      "https://source.unsplash.com/1600x900/?burger,house",
       "https://source.unsplash.com/1600x900/?burger,restaurant",
-      "https://source.unsplash.com/1600x900/?burger,food",
-      "https://source.unsplash.com/1600x900/?burger,house"
+      "https://source.unsplash.com/1600x900/?burger,food"
     ],
     "address": "20 Quai Rambaud 69002 Lyon",
     "stars": 4,
@@ -94,102 +94,6 @@
     "email": "contact@burgerhouse.fr",
     "website": "http://www.burgerhouse.fr",
     "phone": "+33 4 78 42 17 17"
-  },
-  {
-    "id": 1,
-    "name": "Le Petit Bistro",
-    "images": [
-      "https://source.unsplash.com/1600x900/?bistro,restaurant",
-      "https://source.unsplash.com/1600x900/?french,cuisine",
-      "https://source.unsplash.com/1600x900/?bistro,food"
-    ],
-    "address": "17 rue Delandine 69002 Lyon",
-    "stars": 4,
-    "favorite": false,
-    "type": "French",
-    "email": "contact@lepetitbistro.fr",
-    "website": "http://www.lepetitbistro.fr",
-    "phone": "+33 4 78 42 12 12"
-  },
-  {
-    "id": 2,
-    "name": "Pizza Italiana",
-    "images": [
-      "https://source.unsplash.com/1600x900/?pizza,italian",
-      "https://source.unsplash.com/1600x900/?pizza,food",
-      "https://source.unsplash.com/1600x900/?pizza,restaurant"
-    ],
-    "address": "22 rue de la République 69002 Lyon",
-    "stars": 2,
-    "favorite": false,
-    "type": "Pizza",
-    "email": "contact@pizzaitaliana.fr",
-    "website": "http://www.pizzaitaliana.fr",
-    "phone": "+33 4 78 42 13 13"
-  },
-  {
-    "id": 3,
-    "name": "Japanese Sushi",
-    "images": [
-      "https://source.unsplash.com/1600x900/?sushi,restaurant",
-      "https://source.unsplash.com/1600x900/?sushi,food",
-      "https://source.unsplash.com/1600x900/?japanese,sushi"
-    ],
-    "address": "10 rue Sainte-Catherine 69002 Lyon",
-    "stars": 4,
-    "favorite": true,
-    "type": "Sushi",
-    "email": "contact@japanesesushi.fr",
-    "website": "http://www.japanesesushi.fr",
-    "phone": "+33 4 78 42 15 15"
-  },
-  {
-    "id": 4,
-    "name": "Vegan Delight",
-    "images": [
-      "https://source.unsplash.com/1600x900/?vegan,restaurant",
-      "https://source.unsplash.com/1600x900/?vegan,food",
-      "https://source.unsplash.com/1600x900/?vegan,cuisine"
-    ],
-    "address": "27 Rue des Marronniers 69002 Lyon",
-    "stars": 5,
-    "favorite": true,
-    "type": "Vegan",
-    "email": "contact@vegandelight.fr",
-    "website": "http://www.vegandelight.fr",
-    "phone": "+33 4 78 42 19 19"
-  },
-  {
-    "id": 5,
-    "name": "Burger House",
-    "images": [
-      "https://source.unsplash.com/1600x900/?burger,restaurant",
-      "https://source.unsplash.com/1600x900/?burger,food",
-      "https://source.unsplash.com/1600x900/?burger,cuisine"
-    ],
-    "address": "20 Quai Rambaud 69002 Lyon",
-    "stars": 4,
-    "favorite": false,
-    "type": "Burger",
-    "email": "contact@burgerhouse.fr",
-    "website": "http://www.burgerhouse.fr",
-    "phone": "+33 4 78 42 17 17"
-  },
-  {
-    "id": 6,
-    "name": "Asia Fusion",
-    "images": [
-      "https://source.unsplash.com/1600x900/?asian,restaurant",
-      "https://source.unsplash.com/1600x900/?asian,food",
-      "https://source.unsplash.com/1600x900/?asian,cuisine"
-    ],
-    "address": "48 Quai Saint-Antoine 69002 Lyon",
-    "stars": 4,
-    "favorite": false,
-    "type": "Cuisine asiatique",
-    "email": "contact@asiafusion.fr",
-    "website": "http://www.asiafusion.fr",
-    "phone": "+33 4 78 42 20 20"
   },
   {
     "id": 7,
@@ -201,8 +105,8 @@
     ],
     "address": "52 Rue Mercière 69002 Lyon",
     "stars": 5,
-    "favorite": true,
-    "type": "Cuisine italienne",
+    "favorite": false,
+    "type": "Italian",
     "email": "contact@ladolcevita.fr",
     "website": "http://www.ladolcevita.fr",
     "phone": "+33 4 78 42 21 21"
@@ -218,7 +122,7 @@
     "address": "14 Rue de la Charité 69002 Lyon",
     "stars": 4,
     "favorite": false,
-    "type": "Cuisine mexicaine",
+    "type": "Mexican",
     "email": "contact@mexicanfiesta.fr",
     "website": "http://www.mexicanfiesta.fr",
     "phone": "+33 4 78 42 21 21"
@@ -234,7 +138,7 @@
     "address": "9 Place Bellecour 69002 Lyon",
     "stars": 4,
     "favorite": false,
-    "type": "Croissant sandwich",
+    "type": "Croissant",
     "email": "contact@croissantcorner.fr",
     "website": "http://www.croissantcorner.fr",
     "phone": "+33 4 78 42 22 22"
@@ -254,6 +158,101 @@
     "email": "contact@greensalad.fr",
     "website": "http://www.greensalad.fr",
     "phone": "+33 4 78 42 16 16"
+  },
+  {
+    "id": 11,
+    "name": "Mama's Pizza",
+    "images": [
+      "https://source.unsplash.com/1600x900/?pizza,italian",
+      "https://source.unsplash.com/1600x900/?pizza,restaurant",
+      "https://source.unsplash.com/1600x900/?pizza,food"
+    ],
+    "address": "30 Rue de l'Arbre Sec 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Pizza",
+    "email": "contact@mamaspizza.fr",
+    "website": "http://www.mamaspizza.fr",
+    "phone": "+33 4 78 42 23 23"
+  },
+  {
+    "id": 12,
+    "name": "Napoli Pizza",
+    "images": [
+      "https://source.unsplash.com/1600x900/?pizza,food",
+      "https://source.unsplash.com/1600x900/?pizza,restaurant",
+      "https://source.unsplash.com/1600x900/?pizza,napoli"
+    ],
+    "address": "18 Rue du Plat 69002 Lyon",
+    "stars": 5,
+    "favorite": false,
+    "type": "Pizza",
+    "email": "contact@napolipizza.fr",
+    "website": "http://www.napolipizza.fr",
+    "phone": "+33 4 78 42 24 24"
+  },
+  {
+    "id": 13,
+    "name": "Sushi Express",
+    "images": [
+      "https://source.unsplash.com/1600x900/?sushi,restaurant",
+      "https://source.unsplash.com/1600x900/?sushi,food",
+      "https://source.unsplash.com/1600x900/?sushi,express"
+    ],
+    "address": "44 Rue du Plat 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Japanese",
+    "email": "contact@sushiexpress.fr",
+    "website": "http://www.sushiexpress.fr",
+    "phone": "+33 4 78 42 25 25"
+  },
+  {
+    "id": 14,
+    "name": "Taco Fiesta",
+    "images": [
+      "https://source.unsplash.com/1600x900/?taco,restaurant",
+      "https://source.unsplash.com/1600x900/?taco,food",
+      "https://source.unsplash.com/1600x900/?taco,fiesta"
+    ],
+    "address": "15 Rue Victor Hugo 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Mexican",
+    "email": "contact@tacofiesta.fr",
+    "website": "http://www.tacofiesta.fr",
+    "phone": "+33 4 78 42 26 26"
+  },
+  {
+    "id": 15,
+    "name": "Burger Queen",
+    "images": [
+      "https://source.unsplash.com/1600x900/?burger,restaurant",
+      "https://source.unsplash.com/1600x900/?burger,food",
+      "https://source.unsplash.com/1600x900/?burger,queen"
+    ],
+    "address": "66 Rue Mercière 69002 Lyon",
+    "stars": 5,
+    "favorite": false,
+    "type": "Burger",
+    "email": "contact@burgerqueen.fr",
+    "website": "http://www.burgerqueen.fr",
+    "phone": "+33 4 78 42 27 27"
+  },
+  {
+    "id": 16,
+    "name": "Burger Palace",
+    "images": [
+      "https://source.unsplash.com/1600x900/?burger,food",
+      "https://source.unsplash.com/1600x900/?burger,restaurant",
+      "https://source.unsplash.com/1600x900/?burger,palace"
+    ],
+    "address": "23 Rue Édouard Herriot 69002 Lyon",
+    "stars": 4,
+    "favorite": false,
+    "type": "Burger",
+    "email": "contact@burgerpalace.fr",
+    "website": "http://www.burgerpalace.fr",
+    "phone": "+33 4 78 42 28 28"
   }
-  
 ]
