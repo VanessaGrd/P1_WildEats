@@ -73,10 +73,10 @@ main {
 .inscriptionForm {
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   width: 700px;
-  height: 550px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,6 +119,7 @@ main {
   width: 80%;
   border-radius: 10px;
   border: none;
+  padding: 5px;
 }
 
 .input2 {
@@ -126,6 +127,7 @@ main {
   width: 300px;
   border-radius: 10px;
   border: none;
+  padding: 5px;
 }
 
 .input_bloc {
@@ -258,7 +260,7 @@ label {
     margin: 0px;
     padding: 10px;
     right: 10px;
-    top: 540px;
+    top: 55%;
   }
 
   .connexionForm{
